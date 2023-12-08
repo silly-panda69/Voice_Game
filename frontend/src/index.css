@@ -1,9 +1,4 @@
-body {
-  background-image: url('D:\Voice_Game\frontend\src\assets\image.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 .form-1{
   padding: 5px;
   border-radius: 15px;
