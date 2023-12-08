@@ -1,13 +1,18 @@
 import React from 'react';
+import {Route,Routes,BrowserRouter as Router} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import HomePage from './pages/HomePage';
+import GamePage from './pages/GamePage';
 
 function App() {
   return (
-    <div>
-      <HomePage></HomePage>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage/>}></Route>
+        <Route path='/room/:roomId' element={<GamePage/>}></Route>
+      </Routes>
+    </Router>
   );
 }
 
