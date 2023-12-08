@@ -30,8 +30,8 @@ const GamePage = () => {
         socket.on('connect',()=>{
             const peer=new Peer({
                 debug: 3,
-                host: 'https://voice-game-server.onrender.com',
-                port: 5000,
+                host: 'voice-game-server.onrender.com',
+                port: 443,
                 path: '/peerjs',
             });
             peer.on('open',function(id){
